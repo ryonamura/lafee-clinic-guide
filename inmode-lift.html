@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>インモードリフト - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜インモードリフト〜</h1>
+<p class="what-title">インモードリフトってなに？</p>
+<p class="intro">インモードリフトとは、InMode社が開発した医療用RF（高周波）治療機器を使った、切らないリフトアップ施術です。「ミニFX」による脂肪細胞の破壊と「フォーマ」によるコラーゲン再生・皮膚引き締めを組み合わせることで、小顔効果とリフトアップを同時に実現します。メスや注射を使わないため傷跡の心配がなく、日本人の肌質に合わせてカスタマイズされた施術です。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>【ミニFX】高電圧RFで脂肪組織を加熱し、電気穿孔技術で脂肪細胞膜に穴を開けてアポトーシス（自然死）を誘導します</li><li>【フォーマ】バイポーラRFが真皮層に熱エネルギーを送り、即時的な引き締め効果とコラーゲン・エラスチン生成を促します</li><li>フォーマによる新コラーゲンの生成は施術後2〜4週間にわたって進行し、徐々にハリと弾力が増していきます</li><li>脂肪減少と皮膚引き締めの二つの作用が同時に働き、フェイスラインのすっきり感が得られます</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>顔の脂肪減少による小顔効果</li><li>たるみ改善・フェイスラインの引き締め</li><li>二重あごの改善</li><li>コラーゲン再生による肌のハリ・弾力アップ</li><li>施術直後からの引き締め実感</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">カウンセリング → ミニFX照射 → フォーマ照射（約30〜45分） → 終了（直後からメイク可）</p>
+<ul class="bullets" style="margin-top:4px;"><li>推奨は2〜4週間間隔で計3回の施術、その後は半年に1回のメンテナンス</li><li>数日後から効果が現れ始め、コラーゲン生成により2〜4週間かけて徐々に効果がアップします</li><li>頬の上部への施術はほほがこけるリスクがあるため、十分なご説明の上行います</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>ミニFXの施術部位に赤みや軽い腫れが2〜3日出ることがあります</li><li>吸引性の内出血が出る場合がありますが、通常1週間程度で改善します</li><li>フォーマの施術部位は数時間程度の軽い赤み・熱感が出ることがあります</li><li>洗顔・メイク・入浴は施術直後から可能です</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>効果の実感には個人差があり、回数を重ねることでより大きな変化が期待できます</li><li>頬上部の照射は将来的なコケのリスクがあるため、医師と相談の上で決定します</li><li>施術後は保湿と紫外線対策を心がけてください</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>ペースメーカー・体内金属（金の糸・体内埋込式除細動器など）がある方</li><li>妊娠中の方</li><li>施術部位に開いた傷・化膿したニキビがある方</li><li>ケロイド体質の方</li><li>出血性疾患をお持ちの方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. 施術中は痛いですか？</p><p class="faq-a">A. フォーマはじんわり温かい感覚で痛みはほとんどありません。ミニFXは吸引時に引っ張られる感覚がありますが耐えられる程度です。麻酔は通常不要です。</p><p class="faq-q">Q. ハイフ（HIFU）との違いは何ですか？</p><p class="faq-a">A. ハイフは超音波でSMAS筋膜層にピンポイントで熱を加えるリフトアップ治療です。インモードリフトはRFで真皮層〜脂肪層を広範囲に加熱し、脂肪破壊と皮膚引き締めの両方を同時に行います。</p><p class="faq-q">Q. どのくらいで効果が出ますか？</p><p class="faq-a">A. 施術直後からフォーマによる引き締め感を実感される方が多いです。その後2〜4週間かけて新しいコラーゲンが生成され、徐々に効果が高まります。</p></div>
+</div>
+</body>
+</html>

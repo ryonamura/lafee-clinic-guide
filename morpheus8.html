@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>モフィウス8 - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜モフィウス8〜</h1>
+<p class="what-title">モフィウス8ってなに？</p>
+<p class="intro">モフィウス8は、24本のマイクロニードル（微細な針）と高周波（RF）を組み合わせた先進的な美肌治療機器です。微細な針を皮膚に挿入し、真皮層から脂肪層まで高周波エネルギーを均一に届けることで、コラーゲンやエラスチンの生成を強力に促進します。表皮へのダメージが少ないため赤みや腫れが短期間で落ち着きやすく、FDA（米国食品医薬品局）の認可を取得しています。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>マイクロニードルを肌に刺し、皮下脂肪間に直接RFの熱作用を与え、脂肪を凝固させ組織を収縮させます</li><li>真皮層に熱作用を与え、皮下組織の再構築を促し、コラーゲン生成を促進させます</li><li>マイクロニードルによる創傷治癒作用を促し、コラーゲン生成を促進させます</li><li>部位や肌状態に合わせてエネルギー量・針の深度を細かく調整可能です</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>タイタニングとリフトアップ効果</li><li>二重顎の改善</li><li>ニキビ跡の改善</li><li>毛穴のお悩み・肌質改善</li><li>首元のたるみや小じわ・ほうれい線のお悩み</li><li>コラーゲン密度の増加・エラスチン繊維の再生</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">麻酔クリーム塗布（30分） → モフィウス8照射 → クーリング</p>
+<ul class="bullets" style="margin-top:4px;"><li>施術時間は麻酔を含めて約60〜90分です</li><li>推奨回数は3〜5回（1ヶ月間隔）、効果は施術後1〜3ヶ月かけて徐々に現れます</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>施術後1週間半程度、軽度の赤みや皮剥けが起こる可能性があります</li><li>数日程度ひりつきが続くことがあります</li><li>内出血・点状のかさぶたが一時的に現れる場合があります</li><li>施術後2週間程度、肌の乾燥が気になる場合があります</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後塗布したものを水に濡らさないようにお気をつけください</li><li>施術後24時間は患部はぬるま湯で洗う程度にしてください</li><li>施術後72時間は血流が良くなる行為は控えてください（飲酒・過度な運動・サウナ・マッサージ等）</li><li>施術後2週間はレチノール・ハイドロキノン・スクラブ製剤・アルコール成分入りスキンケアの使用はお控えください</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>埋込型除細動器・ペースメーカーを装着されている方</li><li>治療エリアに金属インプラントがある方（歯科インプラントは除く）</li><li>治療エリアに金属の糸が入っている方</li><li>妊娠または過去に皮膚癌の病歴や前癌状態がある方</li><li>ケロイド体質の方</li><li>糖尿病・てんかん・重度の高血圧の方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. 施術は痛いですか？</p><p class="faq-a">A. 施術前に表面麻酔クリームを塗布しますので強い痛みは軽減されます。針が刺さる感覚やRFの熱感がありますが、多くの方が耐えられる範囲です。施術中に出力の調整も可能です。</p><p class="faq-q">Q. 効果はいつ頃から実感できますか？</p><p class="faq-a">A. 施術直後から肌の引き締まりを感じる方もいますが、本格的な効果は施術後1〜3ヶ月かけて徐々に現れます。回数を重ねるごとに効果が高まります。</p><p class="faq-q">Q. ダウンタイム中、仕事は休む必要がありますか？</p><p class="faq-a">A. 赤みや軽い腫れが数日続きますが、マスクで隠せる程度のことが多く、翌日からお仕事に復帰される方がほとんどです。接客業など顔を見せるお仕事の方は2〜3日のお休みがあると安心です。</p></div>
+</div>
+</body>
+</html>

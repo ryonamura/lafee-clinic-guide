@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ターゲットクール - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜ターゲットクール〜</h1>
+<p class="what-title">ターゲットクールってなに？</p>
+<p class="intro">ターゲットクールは、低温のCO2（二酸化炭素）ガスを高速噴射する冷却テクノロジーを利用した最新の美容導入機器です。薬剤を瞬時に微細な氷の針（アイスニードル）に変化させ、針を使わずに肌内部へ美容成分を浸透させる「アイスニードリング」技術が特徴です。痛みや刺激がほとんどなくダウンタイムもほぼないため、美容医療が初めての方や敏感肌の方にも安心して受けていただける施術です。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>高圧CO2冷媒を高速ジェットで噴射し、薬剤を微細な氷の針（アイスニードル）に変化させて肌に浸透させます</li><li>CO2ガスにより毛細血管内のCO2濃度が上昇し「ボーア効果」で肌細胞への酸素供給・新陳代謝を促進します</li><li>冷却により毛穴や角質層の状態を整え、通常の塗布ケアでは届きにくい層まで有効成分を届けます</li><li>他の美容施術後のダウンタイム軽減・美容成分浸透促進のアフターケアとしても活用できます</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>肌の水分量を高め、うるおいと透明感を引き出す</li><li>キメの整ったなめらかな肌へ</li><li>くすみ・乾燥・小じわの改善</li><li>赤みや炎症を抑える抗炎症効果</li><li>他の美容施術との併用で相乗効果（ダウンタイム軽減にも）</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">カウンセリング → 洗顔 → 薬剤選択 → ターゲットクール照射（数分〜10分程度） → 終了（直後からメイク可）</p>
+<ul class="bullets" style="margin-top:4px;"><li>痛みはほとんどなく麻酔は不要です</li><li>導入薬剤は美白・保湿・毛穴ケア・エイジングケア・肌荒れ予防など、お悩みに合わせて選択できます</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>ダウンタイムはほぼありません</li><li>施術直後からメイクが可能です</li><li>軽度の赤みが一時的に生じることがありますが数時間〜1日で消退します</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後は保湿・紫外線対策を通常通り行ってください</li><li>効果の持続期間には個人差があります</li><li>導入する薬剤に対するアレルギーがある場合は事前にお申し出ください</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>妊娠中・授乳中の方</li><li>重度の皮膚疾患・炎症がある方</li><li>極度の冷感過敏症の方</li><li>重篤な心疾患・循環器系疾患をお持ちの方</li><li>導入薬剤に対するアレルギーがある方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. 痛みはありますか？</p><p class="faq-a">A. ほとんど痛みはありません。冷たいガスが当たるひんやりとした感覚がありますが、心地よいと感じる方が多いです。注射針を使わないため針が苦手な方にもおすすめです。</p><p class="faq-q">Q. 他の施術と一緒に受けることはできますか？</p><p class="faq-a">A. はい、むしろ他の施術との併用が効果的です。ターゲットクールには抗炎症効果があるため、ダーマペンやモフィウス8などの施術後に併用することでダウンタイムの軽減が期待できます。</p><p class="faq-q">Q. 何回くらい通えば効果を実感できますか？</p><p class="faq-a">A. 1回でも肌のうるおいや透明感の変化を感じていただけることが多いですが、肌質改善を目指す場合は複数回の施術が効果的です。お悩みに合わせて医師が最適な回数をご提案いたします。</p></div>
+</div>
+</body>
+</html>

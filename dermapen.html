@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ダーマペン - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜ダーマペン〜</h1>
+<p class="what-title">ダーマペンってなに？</p>
+<p class="intro">ダーマペンは、極細の針で肌表面に無数の微細な穴をあけ、その過程で生まれる自然治癒力を利用して肌の再生を促すスキンケア治療です。肌の修復過程でコラーゲンやエラスチンの産生が高まり、ハリ・弾力の向上や毛穴の引き締め、ニキビ跡の改善など幅広い肌悩みに対応します。また微細な穴から美容成分を効率よく浸透させることで相乗効果も期待できます。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>極細針（最大16本）を高速振動で肌表面に微細な穴を形成します</li><li>微細な傷の修復過程で線維芽細胞が活性化し、コラーゲン・エラスチンの新生を促進します</li><li>微細な穴を通じて美容成分（成長因子・ヒアルロン酸など）を真皮層まで効率的に導入します</li><li>針の深度を0.2mm〜3.0mmまで調整可能で、部位や肌悩みに合わせたカスタマイズが可能です</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>ハリ・弾力の向上</li><li>毛穴の開き・黒ずみの改善</li><li>ニキビ跡（クレーター・色素沈着）の改善</li><li>小じわの改善</li><li>肌のくすみ・ざらつきの改善</li><li>美白・保湿効果（導入成分による）</li><li>肌全体の明るさ・透明感の向上</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">カウンセリング → 洗顔 → 麻酔クリーム塗布（20〜30分） → ダーマペン施術 → 美容成分導入 → クーリング・鎮静パック</p>
+<ul class="bullets" style="margin-top:4px;"><li>施術時間は麻酔を含めて約60〜90分です</li><li>導入する美容成分は肌悩みに合わせて選択できます（成長因子・ヒアルロン酸・ビタミンCなど）</li><li>推奨回数は3〜5回（3〜4週間間隔）です</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>施術後、赤み・ほてりが3〜7日続くことがあります（日焼け後のような状態）</li><li>一時的な乾燥や皮むけが起こる場合があります</li><li>まれに内出血が生じることがありますが、1〜2週間で消退します</li><li>一時的にニキビのような吹き出物が出現する場合がありますが、自然に治まります</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後12時間は洗顔・メイクをお控えください</li><li>施術後は保湿と紫外線対策を徹底してください（肌が非常にデリケートな状態です）</li><li>皮むけやかさぶたは無理に剥がさず、自然に剥がれるのを待ってください</li><li>施術後1週間はレチノール・ピーリング剤など刺激の強いスキンケア製品の使用を避けてください</li><li>施術後赤みが引くまで激しい運動・サウナ・飲酒はお控えください</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>妊娠中・授乳中の方</li><li>ケロイド体質の方</li><li>重度の炎症や湿疹など肌が極度に敏感な状態の方</li><li>ヘルペスや感染症にかかっている方</li><li>麻酔アレルギーのある方</li><li>直近2週間以内に他のピーリング治療を受けた方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. 施術はどのくらい痛いですか？</p><p class="faq-a">A. 施術前に麻酔クリームを塗布するため痛みは大幅に軽減されます。チクチクとした軽い刺激を感じる程度で、耐えられないほどの痛みではありません。施術中に声をかけていただければ調整いたします。</p><p class="faq-q">Q. ニキビ跡にはどのくらいの回数が必要ですか？</p><p class="faq-a">A. 一般的に3〜5回の施術で改善が実感できる方が多いです。深いクレーターの場合はさらに回数が必要になることもあります。3〜4週間の間隔をあけて継続することで回数を重ねるごとに効果が高まります。</p><p class="faq-q">Q. ダーマペンとハイドラフェイシャルは併用できますか？</p><p class="faq-a">A. はい、併用可能です。ハイドラフェイシャルで毛穴をクリーンにしてからダーマペンを行うと、美容成分の浸透がさらに高まることが期待できます。</p></div>
+</div>
+</body>
+</html>

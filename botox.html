@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ボトックス - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜ボトックス〜</h1>
+<p class="what-title">ボトックスってなに？</p>
+<p class="intro">ボトックスとは、ボツリヌス菌から抽出されたたんぱく質（ボツリヌストキシン）を用いた注入治療です。神経伝達物質アセチルコリンの放出を抑えることで筋肉の過剰な収縮を和らげ、表情ジワの改善や小顔効果、多汗症の治療など幅広い効果が期待できます。注射のみの短時間施術でダウンタイムがほとんどなく、医療分野でも長年使用されている安全性の高い治療法です。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>ボツリヌストキシンが神経と筋肉の接合部に作用し、神経伝達物質（アセチルコリン）の放出を阻害します</li><li>筋肉の過剰な収縮が抑制され、表情ジワの原因となる筋肉の動きが穏やかになります</li><li>咬筋（エラの筋肉）に注入すると筋肉が徐々に小さくなり、小顔効果が得られます</li><li>汗腺への作用では、発汗を促す神経伝達を抑制し多汗症を改善します</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>表情ジワの改善・予防（額・眉間・目尻など）</li><li>咬筋縮小による小顔・エラ改善</li><li>人中短縮・口角アップ</li><li>肩こり緩和・首長効果</li><li>脇の多汗症改善</li><li>ふくらはぎの筋肉縮小による脚痩せ</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">カウンセリング → 施術部位のマーキング → ボトックス注入（5〜10分） → 終了</p>
+<ul class="bullets" style="margin-top:4px;"><li>当院ではアラガン社製（高品質・安定性重視）とボツラックス（韓国KFDA認可）の2種類をご用意しています</li><li>効果は注入後数日〜2週間で現れ、約3〜6ヶ月持続します</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>ダウンタイムはほとんどありません</li><li>まれに注射部位に内出血が出る場合がありますが、1〜2週間で消失します</li><li>注射部位にわずかな赤みや腫れが出る場合がありますが、数時間〜翌日には治まります</li><li>メイク・洗顔・シャワーは当日から可能です</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後4時間程度は横にならないでください</li><li>施術後1週間は注入部位を強くこすったり揉んだりしないでください</li><li>施術当日は激しい運動・飲酒・サウナはお控えください</li><li>効果の持続は約3〜6ヶ月です。定期的な施術で効果を維持できます</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>妊娠中・授乳中の方</li><li>重症筋無力症・筋萎縮性側索硬化症（ALS）の方</li><li>ボツリヌストキシン製剤にアレルギーがある方</li><li>施術部位に皮膚感染症がある方</li><li>抗凝固薬を服用中の方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. ボトックスで表情が不自然になりませんか？</p><p class="faq-a">A. 適切な量を適切な部位に注入すれば、自然な表情を保ちながらシワを改善できます。当院では医師が患者様の表情の動きを見ながら量を判断しますのでご安心ください。</p><p class="faq-q">Q. 効果はどのくらい続きますか？</p><p class="faq-a">A. 一般的に3〜6ヶ月程度です。定期的に続けることで筋肉が徐々に小さくなり、施術間隔が延びる方もいらっしゃいます。</p><p class="faq-q">Q. アラガンとボツラックスの違いは何ですか？</p><p class="faq-a">A. アラガン社製は世界的に最も使用実績が多く品質の安定性に定評があります。ボツラックスは韓国KFDA認可のジェネリック製剤で、コストを抑えながら同様の効果が期待できます。</p></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>オリジオKISS - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜オリジオKISS〜</h1>
+<p class="what-title">オリジオKISSってなに？</p>
+<p class="intro">オリジオKISSは、RF（高周波）とHIFU（高密度焦点式超音波）を1台に搭載した最新のハイブリッド型たるみ治療機器です。RFにはT・G・Xの3つのモードがあり肌の浅い層から深い層まで段階的にアプローチ。さらにHIFUがSMAS層（筋膜）を引き締めることで、即時的なリフトアップ効果と長期的なコラーゲン再生効果の両方を実現します。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>Tモード（RF）：真皮の最も浅い層に熱エネルギーを届け、肌表面のハリ改善・毛穴引き締めを促します</li><li>Gモード（RF）：真皮中層をターゲットに加熱し、コラーゲンのリモデリングを促進してたるみを改善します</li><li>Xモード（RF）：真皮深層〜脂肪層を集中的に加熱し、フェイスラインのリフトアップ・脂肪層の収縮を実現します</li><li>HIFU：SMAS層（筋膜）に超音波を集中照射し、組織を収縮させて即時的な引き上げ効果をもたらします</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>フェイスラインのリフトアップ・引き締め</li><li>たるみの改善（頬・あご下・フェイスライン）</li><li>小じわ・ちりめんじわの改善</li><li>毛穴の引き締め</li><li>肌のハリ・弾力の向上（コラーゲン生成促進）</li><li>肌のキメ・質感の改善</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">カウンセリング → 洗顔 → ジェル塗布 → RF照射（T/G/Xモード） → HIFU照射 → クーリング・保湿</p>
+<ul class="bullets" style="margin-top:4px;"><li>施術時間は約60〜90分。メイクは当日から可能です</li><li>施術直後から引き締め効果を実感でき、1〜3ヶ月後に最大効果が現れます</li><li>3〜6ヶ月に1回のペースでのメンテナンスを推奨しています</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>洗顔・入浴・メイクは当日から可能です</li><li>軽い赤み・腫れ・熱感が出ることがありますが、通常数時間〜数日で消失します</li><li>施術中にピリピリとした刺激やじんわりした温かさを感じますが我慢できる程度です</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後1週間は過度の日焼け・サウナ・激しい運動を控えてください</li><li>施術後は保湿と日焼け止めを十分に行ってください</li><li>過去3ヶ月以内に施術部位にフィラー注入や手術を受けた方は必ずお申し出ください</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>妊娠中・授乳中の方</li><li>体内にペースメーカー・電子インプラントを埋め込んでいる方</li><li>施術部位に金属プレートや金の糸が入っている方</li><li>糖尿病・てんかん・出血性疾患のある方</li><li>施術部位に炎症・感染症・傷がある方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. HIFU単体の施術との違いは何ですか？</p><p class="faq-a">A. HIFU単体は主にSMAS層への引き上げ効果ですが、オリジオKISSはRFによる真皮浅層〜深層の加熱効果とHIFUの筋膜引き上げ効果を組み合わせることで、肌表面のハリから深部のリフトアップまで多層的にアプローチできます。</p><p class="faq-q">Q. 施術は痛いですか？</p><p class="faq-a">A. RF照射時にじんわりとした温かさ、HIFU照射時にチクチクとした刺激を感じることがありますが耐えられる程度です。施術中に出力を調整しながら進めます。</p><p class="faq-q">Q. 効果はいつ頃から実感できますか？</p><p class="faq-a">A. 施術直後から引き締め効果を実感される方が多いです。その後1〜3ヶ月かけてコラーゲンが再生されることで効果がさらに高まり、最大6ヶ月程度持続します。</p></div>
+</div>
+</body>
+</html>

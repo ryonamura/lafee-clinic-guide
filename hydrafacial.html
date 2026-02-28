@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ハイドラフェイシャル - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜ハイドラフェイシャル〜</h1>
+<p class="what-title">ハイドラフェイシャルってなに？</p>
+<p class="intro">ハイドラフェイシャルは、特許取得のスパイラルデザインチップが生み出す渦巻状の水流を利用し、ディープクレンジング・ピーリング・毛穴吸引・美容液導入を1回の施術で行うピーリング治療です。美容成分配合の薬液を肌に圧着させながら行うソフトピーリングのため肌への負担が少なく、メイク汚れ・古い角質・毛穴の黒ずみを除去しながら、うるおいと透明感のある肌へ導きます。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>特許取得のスパイラルデザインチップが渦巻状の水流を発生させ、毛穴の奥まで洗浄します</li><li>美容成分配合の薬液を肌に圧着させながらソフトピーリングを実施し、肌への負担を最小限にします</li><li>3ステップ（クレンジング＆ピーリング → 毛穴吸引＆保湿 → 美容液導入）で肌の汚れを除去しながら美容成分を補給します</li><li>医療用薬剤（高濃度）を使用するため、エステ用より高いピーリング効果を発揮します</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>毛穴の黒ずみ・詰まり・開きの除去</li><li>ニキビ肌の改善</li><li>肌のざらつき・くすみの改善</li><li>小じわの改善</li><li>保湿力アップ・ハリ感の向上</li><li>美白効果・透明感の向上</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">洗顔 → ステップ1：クレンジング＆ピーリング → ステップ2：毛穴吸引＆保湿 → ステップ3：美容液導入 → 施術完了（直後からメイク可）</p>
+<ul class="bullets" style="margin-top:4px;"><li>施術時間は約30分程度です</li><li>1ヶ月おきに3〜5回の施術を推奨、その後は1〜2ヶ月おきの定期施術で効果を持続させます</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>基本的にダウンタイムはありません</li><li>施術直後からメイクが可能です</li><li>一時的に軽い赤みやつっぱり感が出る場合がありますが、すぐに落ち着きます</li><li>施術当日はシャワーのみ推奨です</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後は保湿と紫外線対策を十分に行ってください</li><li>2週間以内にピーリング治療を受けた方は事前に医師にご相談ください</li><li>半年以内にヒアルロン酸注射や糸による施術を受けた方は事前に医師にご相談ください</li><li>施術当日の過度な運動・飲酒・サウナはお控えください</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>65歳以上の方</li><li>悪性腫瘍の治療中または治療後5年未満の方</li><li>ヘルペス・白斑・炎症性ニキビ・感染症がある方</li><li>妊娠中・授乳中の方</li><li>強い炎症がある方</li><li>内服治療中の方（薬剤の種類による）</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. 施術は痛くないですか？</p><p class="faq-a">A. 水流を利用したソフトピーリングのため痛みはほとんどありません。吸引時にわずかな引っ張られる感覚がありますが、リラックスして受けていただける方がほとんどです。</p><p class="faq-q">Q. 1回でも効果は実感できますか？</p><p class="faq-a">A. 1回の施術でも肌のトーンアップや毛穴のすっきり感を実感される方が多いです。より持続的な効果を得るには1ヶ月おきに3〜5回の継続をおすすめしています。</p><p class="faq-q">Q. 敏感肌でも受けられますか？</p><p class="faq-a">A. 従来のピーリングと比べて肌への負担が少なく、敏感肌の方にも受けていただきやすい施術です。ただし肌の状態によっては施術をお控えいただく場合がありますので、カウンセリング時にご相談ください。</p></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>スネコスパフォルマ - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜スネコスパフォルマ〜</h1>
+<p class="what-title">スネコスパフォルマってなに？</p>
+<p class="intro">スネコスパフォルマは、イタリア生まれの次世代肌再生注射です。非架橋ヒアルロン酸と6種のアミノ酸を国際特許取得の特別な比率で配合した「細胞外マトリックス（ECM）再生製剤」で、肌のコラーゲンやエラスチンの生成を自然に促します。化学物質を含まないシンプルな成分構成で、欧州安全基準「CE ClassⅢ」を取得した高い安全性が特徴です。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>非架橋ヒアルロン酸とアミノ酸が真皮の線維芽細胞を刺激し、自己のコラーゲンとエラスチンの合成を促進します</li><li>細胞外マトリックス（ECM）が再構築されることで、真皮の弾力と張力が回復します</li><li>低分子の非架橋ヒアルロン酸が肌を内側から潤しながら、自然な状態で分解・吸収されます</li><li>架橋剤などの化学物質を含まないため、血管閉塞やアレルギーのリスクが極めて低い治療です</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>目の下のクマ（青クマ・赤クマ）の改善</li><li>小じわ・ちりめんじわの改善</li><li>毛穴の引き締め</li><li>肌のハリ・弾力の回復</li><li>首のしわ改善</li><li>肌の透明感・ツヤの向上</li><li>自然な若返り効果（膨らみすぎない仕上がり）</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">カウンセリング → 洗顔 → 表面麻酔（ご希望の場合） → 注入（真皮層への注射） → クーリング</p>
+<ul class="bullets" style="margin-top:4px;"><li>2週間に1回のペースで4回の施術を1クールとして推奨しています</li><li>その後はメンテナンスとして半年に1回程度の施術がおすすめです</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>注入部位に膨疹（小さな膨らみ）が出ますが、数時間〜翌日には消失します</li><li>内出血が生じた場合は1〜2週間程度で消えます</li><li>軽い赤み・腫れ・痛みが2〜3日続くことがあります</li><li>当日からシャワー・軽い洗顔・メイクは可能です</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後2日間は注射部位を擦ったり揉んだりしないでください</li><li>施術当日は飲酒・サウナ・激しい運動を控えてください</li><li>効果は徐々に現れ、4回の施術完了後に最も実感できます</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>妊娠中・授乳中の方</li><li>施術部位に潰瘍・感染・炎症がある方</li><li>湿疹または乾癬を発症している方</li><li>自己免疫疾患の治療中の方</li><li>ケロイド体質の方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. スネコスパフォルマとヒアルロン酸注入の違いは何ですか？</p><p class="faq-a">A. 通常のヒアルロン酸注入はしわを物理的に埋めて持ち上げる施術ですが、スネコスパフォルマは肌自身のコラーゲン・エラスチン生成を促進し肌質そのものを改善します。不自然な膨らみが出にくく自然な若返り効果が得られます。</p><p class="faq-q">Q. 目の下のクマに効果はありますか？</p><p class="faq-a">A. はい、特に青クマ・赤クマに高い効果が報告されています。真皮が再構築されることで血管の透けが軽減され、4回1クール完了後はほぼすべての方が改善を実感されています。</p><p class="faq-q">Q. 施術中の痛みはありますか？</p><p class="faq-a">A. 細い針を使用するため軽い痛みを感じることがあります。痛みが心配な方には表面麻酔クリームをご用意しておりますのでカウンセリング時にお申し付けください。</p></div>
+</div>
+</body>
+</html>

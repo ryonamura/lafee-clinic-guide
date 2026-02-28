@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ピーリング - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜ピーリング〜</h1>
+<p class="what-title">ピーリングってなに？</p>
+<p class="intro">ピーリングとは、専用の薬剤を肌に塗布して古い角質や汚れを除去し、肌のターンオーバー（新陳代謝）を促進する施術です。当院では肌質やお悩みに合わせて5種類のピーリングをご用意しています。コラーゲン生成の促進やシミ・くすみの改善など、幅広い肌悩みに対応します。</p>
+<div class="sec"><p class="sec-title">《施術のしくみ》</p><ul class="bullets"><li>薬剤が古い角質を溶解・除去し、肌のターンオーバー（新陳代謝）を正常化させます</li><li>真皮層まで浸透する薬剤（TCA・MCA等）が線維芽細胞を刺激し、コラーゲン・エラスチンの産生を促します</li><li>メラニンを含む古い角質が排出されることで、シミやくすみが改善されます</li><li>毛穴に詰まった角質や皮脂を除去し、ニキビの原因となる毛穴閉塞を解消します</li></ul></div>
+<div class="sec"><p class="sec-title">《施術の種類》</p><div class="subtype">
+<p class="subtype-name">■ マッサージピール（PRX-T33）</p>
+<p class="subtype-desc">真皮層まで浸透してコラーゲン生成を促進。皮むけがほとんどなく、施術直後からツヤとハリを実感できます。アジア人の薄い肌に適した低刺激設計。</p>
+<p class="subtype-best">▶ こんな方に：肌のハリ・ツヤ不足、小じわ、くすみ、ニキビ跡</p>
+</div><div class="subtype">
+<p class="subtype-name">■ ミラノリピール</p>
+<p class="subtype-desc">5種類の酸とアミノ酸を配合したイタリア発ピーリング。Ⅲ型コラーゲンの増加を促し、ボディ（首・デコルテ）にも使用可能。</p>
+<p class="subtype-best">▶ こんな方に：ハリ・ツヤ低下、毛穴の開き、くすみ、ボディの肌質改善</p>
+</div><div class="subtype">
+<p class="subtype-name">■ トラネックスレチピール</p>
+<p class="subtype-desc">レチノール・トラネキサム酸・ビタミンCを組み合わせたピーリング。特に肝斑やシミ・くすみなどの色素トラブルに高い効果が期待できます。</p>
+<p class="subtype-best">▶ こんな方に：肝斑、シミ・くすみ、色素沈着、ニキビ、小じわ</p>
+</div><div class="subtype">
+<p class="subtype-name">■ サリチル酸マクロゴール</p>
+<p class="subtype-desc">マクロゴールがサリチル酸の過剰な浸透を防ぎ、角質層のみに安全に作用。刺激が少なくピーリング初心者にもおすすめ。</p>
+<p class="subtype-best">▶ こんな方に：ニキビ・ニキビ跡、毛穴の開き・黒ずみ、くすみ</p>
+</div><div class="subtype">
+<p class="subtype-name">■ PQageピーリング</p>
+<p class="subtype-desc">高濃度モノクロロ酢酸（MCA）をカプセル化した次世代ピーリング。成長因子・コウジ酸・コエンザイムQ10配合で美白・毛穴・ハリを多角的に改善。</p>
+<p class="subtype-best">▶ こんな方に：エイジングケア全般、美白、毛穴、ハリ・弾力低下</p>
+</div></div>
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>肌のハリ・弾力の向上（コラーゲン生成促進）</li><li>シミ・くすみの改善と美白効果</li><li>毛穴の引き締め・黒ずみの改善</li><li>ニキビ・ニキビ跡の改善</li><li>小じわの軽減</li><li>肌の透明感・キメを整える</li></ul></div>
+<div class="sec">
+<p class="sec-title">《治療について》</p>
+<p class="flow">カウンセリング → 洗顔 → 薬剤塗布（5〜15分） → 拭き取り・中和 → 保湿・日焼け止め塗布</p>
+<ul class="bullets" style="margin-top:4px;"><li>施術時間は約30〜60分（種類による）</li><li>最大効果を得るために2〜4週間おきに4〜6回の施術を1クールとして推奨しています</li></ul>
+</div>
+<div class="sec"><p class="sec-title">《ダウンタイム》</p><ul class="bullets"><li>マッサージピール・PQage：ほとんどなし。稀に翌日〜数日後に薄い皮むけが生じる程度</li><li>ミラノリピール：施術後3〜4日目から皮むけが始まり7〜10日程度続くことがあります</li><li>トラネックスレチピール：施術後3〜4日目から約1週間の皮むけが生じます</li><li>サリチル酸マクロゴール：ほとんどなし。軽い赤みが数時間〜翌日で消失</li><li>軽度の赤みやピリピリ感が出る場合がありますが、通常数時間〜1日程度で落ち着きます</li></ul></div>
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>施術後は日焼け止め（SPF30以上）を必ず使用してください</li><li>施術後1週間は過度の日焼け・サウナ・激しい運動を避けてください</li><li>皮むけが生じた場合は無理にはがさず、自然に剥がれるのをお待ちください</li><li>施術前後1週間はレチノール配合の化粧品の使用を控えてください</li><li>他のピーリングやレーザー施術との間隔は最低2週間あけてください</li></ul></div>
+<div class="sec"><p class="sec-title">《施術を受けられない方》</p><ul class="bullets"><li>妊娠中・授乳中の方</li><li>施術部位にヘルペス・感染症がある方</li><li>強い日焼け直後・日光過敏症の方</li><li>施術部位に傷・炎症・湿疹がある方</li><li>ケロイド体質の方</li></ul></div>
+<div class="sec"><p class="sec-title">《よくあるご質問》</p><p class="faq-q">Q. どの種類のピーリングが自分に合いますか？</p><p class="faq-a">A. ニキビ・毛穴が気になる方にはサリチル酸マクロゴール、ハリ・ツヤ不足にはマッサージピールやPQage、シミ・肝斑にはトラネックスレチピールがおすすめです。カウンセリングで最適なものをご提案します。</p><p class="faq-q">Q. 施術は痛いですか？</p><p class="faq-a">A. 薬剤塗布時にピリピリとした軽い刺激を感じることがありますが、強い痛みではありません。サリチル酸マクロゴールやPQageは特に刺激が少なくピーリング初めての方にも安心です。</p><p class="faq-q">Q. 効果が出るまでどのくらいかかりますか？</p><p class="faq-a">A. マッサージピールやPQageは施術直後からツヤ・ハリを実感される方が多いです。シミやニキビ跡の根本改善には4〜6回の継続施術が効果的です。</p></div>
+</div>
+</body>
+</html>
