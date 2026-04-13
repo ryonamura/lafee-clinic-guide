@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>カナグル - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜カナグル〜</h1>
+<p class="what-title">カナグルってなに？</p>
+<p class="intro">カナグル（一般名：カナグリフロジン）は、<span class="keyword">SGLT2阻害薬</span>と呼ばれるカテゴリーの経口内服薬です。腎臓の糖の再吸収を担うSGLT2というタンパク質を阻害することで、余分な糖を尿と一緒に体外へ排出します。カロリーを体の外に積極的に出す仕組みのため、食欲を我慢することなく体重を減らしやすくなります。GLP-1薬とは異なるメカニズムで作用するため、GLP-1薬と組み合わせて処方されることも多く、相乗効果が期待できます。</p>
+
+<div class="sec"><p class="sec-title">《作用のしくみ》</p><ul class="bullets"><li>腎臓の近位尿細管にあるSGLT2（ナトリウム・グルコース共輸送体2）を選択的に阻害します</li><li>通常は腎臓でほぼ全量再吸収される血中の糖が、再吸収されずに尿へ排出されます</li><li>1日あたり約60〜80gの糖（約240〜320kcal相当）が尿から排泄されることで、体脂肪の減少につながります</li><li>血糖値の低下に伴い、余剰なエネルギーを脂肪として蓄えにくい状態になります</li><li>血圧低下・体液量の軽減効果もあり、むくみの改善を感じる方もいます</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>余分な糖を尿から排出することによる体重減少</li><li>血糖値・HbA1cの改善</li><li>内臓脂肪の減少</li><li>むくみの改善・体のすっきり感</li><li>血圧の軽度改善</li><li>GLP-1薬との併用による相乗的な体重減少効果</li></ul></div>
+
+<div class="sec">
+<p class="sec-title">《服用方法》</p>
+<p class="flow">1日1回 → 朝食前または朝食後のどちらでも可 → 毎日同じ時間帯に服用</p>
+<ul class="bullets" style="margin-top:4px;">
+  <li><span class="keyword">用量：カナグル100mg</span>（1錠）を1日1回服用します</li>
+  <li>食事に関係なく服用できますが、毎日同じタイミングで飲むと飲み忘れを防げます</li>
+  <li>飲み忘れた場合は気づいた時点で服用し、翌日からは通常通りに戻してください。2錠まとめて飲まないでください</li>
+  <li>水分をこまめにしっかり摂ることが大切です。1日1.5〜2L程度を目安にしてください</li>
+</ul>
+</div>
+
+<div class="sec"><p class="sec-title">《副作用について》</p><ul class="bullets"><li><span class="keyword">尿路感染症</span>（膀胱炎・腎盂腎炎）：糖を含んだ尿が細菌の温床になりやすいため、排尿時の痛み・残尿感・発熱が続く場合はご連絡ください</li><li><span class="keyword">性器感染症</span>（外陰部・膣部のかゆみ・不快感）：女性に多く報告されています。症状が出た場合は早めにご相談ください</li><li>頻尿：服用初期に尿の量・回数が増える場合があります。多くは1〜2週間で落ち着きます</li><li>脱水・立ちくらみ：水分補給が不足すると起こりやすくなります。特に暑い日や運動時は注意が必要です</li><li>まれに正常血糖ケトアシドーシスが起こることがあります。吐き気・腹痛・だるさが続く場合はすぐにご連絡ください</li></ul></div>
+
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li><span class="keyword">水分補給が最重要です</span>。1日1.5〜2L以上の水をこまめに飲んでください。飲み忘れると感染症や脱水のリスクが高まります</li><li>陰部は清潔に保ち、感染症の予防を心がけてください</li><li>手術・入院・絶食が必要な処置の前には一時中止が必要な場合があります。事前に必ずご連絡ください</li><li>激しい運動・下痢・嘔吐・高熱が続くときは脱水になりやすいため、一時的に服用を中断してご相談ください</li><li>他の糖尿病薬と併用する場合は低血糖に注意してください</li></ul></div>
+
+<div class="sec"><p class="sec-title">《処方できない方》</p><ul class="bullets"><li>重度の腎機能障害（eGFR 45未満）の方</li><li>1型糖尿病の方</li><li>妊娠中・妊娠を計画中・授乳中の方</li><li>カナグリフロジンまたは製剤成分にアレルギーがある方</li><li>繰り返す尿路感染症・性器感染症がある方</li><li>重度の肝機能障害のある方</li></ul></div>
+
+<div class="sec"><p class="sec-title">《よくあるご質問》</p>
+<p class="faq-q">Q. GLP-1薬（マンジャロ・リベルサス）と一緒に使えますか？</p>
+<p class="faq-a">A. はい、GLP-1薬とカナグルは作用機序が異なるため、併用が可能です。GLP-1薬が食欲を抑えるのに対し、カナグルは糖を尿から排出するため、2つのアプローチで体重減少を促す相乗効果が期待できます。ただし複数の薬を使う場合は副作用の確認が重要ですので、必ず医師の指示のもとで使用してください。</p>
+<p class="faq-q">Q. 水分をたくさん飲む必要があるのはなぜですか？</p>
+<p class="faq-a">A. カナグルは尿量を増やすため、水分が不足すると脱水や尿路感染症のリスクが高まります。また、尿中の糖分が増えることで細菌が繁殖しやすくなるため、こまめな水分補給で尿路を洗い流すことが感染症の予防になります。1日1.5〜2L以上を目安に、こまめに飲む習慣をつけてください。</p>
+<p class="faq-q">Q. 効果が出るまでどのくらいかかりますか？</p>
+<p class="faq-a">A. 血糖値への効果は服用開始から比較的早期（1〜2週間以内）に現れます。体重への効果は1〜2ヶ月で少しずつ現れ、3〜6ヶ月にかけて安定してくる方が多いです。食事・運動習慣と組み合わせることでより高い効果が期待できます。</p>
+</div>
+</div>
+</body>
+</html>

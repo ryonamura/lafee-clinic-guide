@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ノイロビタン - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜 ノイロビタン 〜</h1>
+
+<p class="what-title">ノイロビタンってなに？</p>
+<p class="intro">
+ノイロビタンは、<span class="keyword">ビタミンB群（B1・B2・B6・B12）を複合配合</span>したサプリメント的な内服薬です。ビタミンB群は互いに協力しながら働き、皮膚・粘膜の健康維持、細胞の新陳代謝促進、神経機能のサポートなど、美容と健康の両面で重要な役割を担っています。食事だけでは補いにくいビタミンをバランスよく補給することで、肌の状態を内側から整えます。
+</p>
+
+<hr>
+
+<div class="sec">
+  <p class="sec-title">《 作用のしくみ 》</p>
+  <div class="subtype">
+    <p class="subtype-name">ビタミンB1（チアミン）</p>
+    <p class="subtype-desc">糖質をエネルギーに変換する代謝を助けます。神経機能を正常に保ち、疲労感の軽減に寄与します。</p>
+  </div>
+  <div class="subtype">
+    <p class="subtype-name">ビタミンB2（リボフラビン）</p>
+    <p class="subtype-desc">細胞の成長と再生を促す酵素の補助因子として働きます。皮脂の代謝を調整し、肌荒れや口内炎の予防に関わります。</p>
+  </div>
+  <div class="subtype">
+    <p class="subtype-name">ビタミンB6（ピリドキシン）</p>
+    <p class="subtype-desc">アミノ酸の代謝を助け、肌のもととなるタンパク質の合成をサポートします。ホルモンバランスの安定にも関与します。</p>
+  </div>
+  <div class="subtype">
+    <p class="subtype-name">ビタミンB12（シアノコバラミン）</p>
+    <p class="subtype-desc">赤血球の生成を促し、末梢神経の修復を助けます。細胞分裂を正常に維持し、健康な肌のターンオーバーを支えます。</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="sec">
+  <p class="sec-title">《 期待できる効果 》</p>
+  <ul class="bullets">
+    <li>肌荒れ・ニキビ跡の改善</li>
+    <li>口内炎・唇の荒れの予防・改善</li>
+    <li>皮脂バランスの調整による脂性肌・乾燥肌の改善</li>
+    <li>細胞の新陳代謝（ターンオーバー）の促進</li>
+    <li>疲労感の軽減・体力の維持</li>
+    <li>神経機能のサポート</li>
+  </ul>
+</div>
+
+<hr>
+
+<div class="sec">
+  <p class="sec-title">《 服用方法 》</p>
+  <p class="flow">● 用量：通常、1日1〜3錠を目安に服用します（医師の指示に従ってください）。</p>
+  <p class="flow">● タイミング：食後に服用することで、胃への負担を軽減できます。</p>
+  <p class="flow">● 飲み方：水またはぬるま湯で服用してください。噛み砕かずにそのまま飲み込んでください。</p>
+  <p class="flow">● 継続期間：効果を実感するには継続的な服用が大切です。少なくとも1〜2ヶ月を目安に継続することをおすすめします。</p>
+</div>
+
+<hr>
+
+<div class="sec">
+  <p class="sec-title">《 副作用について 》</p>
+  <p class="intro">ノイロビタンは水溶性ビタミン製剤のため、余分な量は尿として排出されます。過剰摂取による蓄積毒性はほとんどなく、副作用の発生頻度は非常に低い薬剤です。</p>
+  <ul class="bullets">
+    <li>まれに胃の不快感・胃もたれが生じることがあります</li>
+    <li>まれに吐き気・食欲不振が起こることがあります</li>
+    <li>高用量服用時、尿が黄色く着色することがありますが、ビタミンB2の色素によるものであり、無害です</li>
+    <li>アレルギー体質の方はまれに発疹が出ることがあります</li>
+  </ul>
+  <p class="intro">上記以外に気になる症状が現れた場合は、服用を中止し医師にご相談ください。</p>
+</div>
+
+<hr>
+
+<div class="sec">
+  <p class="sec-title">《 注意事項 》</p>
+  <ul class="bullets">
+    <li>医師の処方に従い、指定された用量を守って服用してください</li>
+    <li>直射日光・高温多湿を避け、涼しい場所に保管してください</li>
+    <li>小児の手の届かない場所に保管してください</li>
+    <li>他の内服薬を服用中の場合は、事前に医師または薬剤師へご相談ください</li>
+    <li>妊娠中・授乳中の方は服用前に必ず医師にご相談ください</li>
+  </ul>
+</div>
+
+<hr>
+
+<div class="sec">
+  <p class="sec-title">《 処方できない方 》</p>
+  <ul class="bullets">
+    <li>ノイロビタンまたはその成分（ビタミンB群）にアレルギーのある方</li>
+    <li>過去に本剤で過敏症状（発疹・蕁麻疹など）を経験されたことがある方</li>
+  </ul>
+  <p class="intro" style="margin-top:6px;">上記に該当する方は、必ず医師にお申し出ください。</p>
+</div>
+
+<hr>
+
+<div class="sec">
+  <p class="sec-title">《 よくあるご質問 》</p>
+
+  <p class="faq-q">Q. 市販のビタミン剤と何が違うのですか？</p>
+  <p class="faq-a">ノイロビタンは医療機関で処方される医薬品です。B1・B2・B6・B12の4種類のビタミンBがバランスよく配合されており、各成分の含有量や品質が一定に管理されています。市販のサプリメントと比べ、医師が症状や体質に合わせて処方量を調整できる点が異なります。</p>
+
+  <p class="faq-q">Q. 他のビタミン剤（シナールやハイチオールなど）と一緒に飲んでも大丈夫ですか？</p>
+  <p class="faq-a">はい、一般的には併用可能です。ビタミンC（シナール）やL-システイン（ハイチオール）との組み合わせは、互いの美容効果を相補的にサポートします。ただし、他のビタミンB群サプリメントを同時に服用している場合は過剰摂取にならないよう、医師にご相談ください。</p>
+
+  <p class="faq-q">Q. 効果はいつ頃から実感できますか？</p>
+  <p class="faq-a">個人差がありますが、肌荒れや口内炎の改善は早ければ2〜4週間程度で感じられることがあります。疲労感の改善はさらに早く実感できる場合もあります。ただし、肌のターンオーバーには約1〜2ヶ月かかるため、美肌効果を実感するには継続的な服用が大切です。</p>
+</div>
+
+</div>
+</body>
+</html>

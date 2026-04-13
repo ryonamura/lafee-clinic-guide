@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>リベルサス - La Fée Clinic</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", "MS Mincho", serif;
+  font-size: 10.5pt;
+  color: #222;
+  line-height: 1.7;
+  background: #f5f5f5;
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 22mm;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.label { text-align: right; font-size: 8.5pt; color: #888; margin-bottom: 6px; }
+h1 { text-align: center; font-size: 16pt; font-weight: bold; letter-spacing: 3px; margin: 10px 0 18px; }
+.what-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.intro { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+.keyword { color: #c0392b; font-weight: bold; }
+.bullets { list-style: none; padding-left: 4px; margin-bottom: 8px; }
+.bullets li { font-size: 10pt; margin: 3px 0; }
+.bullets li::before { content: "・"; }
+.sec { margin: 12px 0 4px; }
+.sec-title { font-size: 10.5pt; font-weight: bold; margin-bottom: 5px; }
+.flow { font-size: 10pt; margin: 4px 0 6px 4px; color: #333; }
+hr { border: none; border-top: 0.5px solid #ccc; margin: 10px 0; }
+.subtype { margin: 6px 0 10px 0; padding-left: 6px; border-left: 3px solid #e8b4b8; }
+.subtype-name { font-weight: bold; font-size: 10pt; margin-bottom: 2px; }
+.subtype-desc { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+.subtype-best { font-size: 9pt; color: #888; }
+.faq-q { font-weight: bold; font-size: 10pt; margin: 8px 0 2px; }
+.faq-a { font-size: 10pt; color: #333; margin-bottom: 4px; padding-left: 8px; }
+.pdf-btn {
+  position: fixed; top: 20px; right: 20px;
+  background: #c0392b; color: white;
+  border: none; padding: 10px 20px;
+  border-radius: 6px; font-size: 14px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.pdf-btn:hover { background: #a93226; }
+.back-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #555; color: white;
+  border: none; padding: 10px 16px;
+  border-radius: 6px; font-size: 13px;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); z-index: 9999;
+}
+.back-btn:hover { background: #333; }
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; padding: 15mm 18mm; width: 100%; min-height: auto; }
+  .pdf-btn, .back-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="back-btn" href="index.html">← 一覧</a>
+<button class="pdf-btn" onclick="window.print()">📄 PDFで保存</button>
+<div class="page">
+<p class="label">お客様ご案内用</p>
+<h1>〜リベルサス〜</h1>
+<p class="what-title">リベルサスってなに？</p>
+<p class="intro">リベルサス（一般名：セマグルチド）は、世界初の<span class="keyword">GLP-1受容体作動薬の経口錠剤</span>です。これまでGLP-1薬は注射でしか投与できませんでしたが、リベルサスは飲み薬として服用できるため、注射が苦手な方でも継続しやすいのが大きな特徴です。食欲を自然に抑えながら血糖値をコントロールし、体重減少を促します。1日1回、起床後すぐの服用という明確なルールがあり、正しく飲むことで安定した効果が期待できます。</p>
+
+<div class="sec"><p class="sec-title">《作用のしくみ》</p><ul class="bullets"><li>小腸から分泌される天然のGLP-1ホルモンと同じ受容体に結合し、その働きを模倣・増強します</li><li>食後の血糖上昇に応じてインスリン分泌を促進し、血糖値の急激な上昇を抑えます</li><li>グルカゴン（血糖を上げるホルモン）の過剰な分泌を抑制します</li><li>胃の内容物の排出を緩やかにし、食後の満腹感を長持ちさせます</li><li>脳の視床下部に作用して食欲中枢を抑制し、食べ過ぎを防ぎます</li></ul></div>
+
+<div class="sec"><p class="sec-title">《期待できる効果》</p><ul class="bullets"><li>食欲の自然な抑制による体重減少</li><li>血糖値・HbA1cの改善</li><li>食後の過食・間食衝動の軽減</li><li>体脂肪・内臓脂肪の減少</li><li>注射なしで継続できるため、長期的な体重管理に向いています</li></ul></div>
+
+<div class="sec">
+<p class="sec-title">《服用方法》</p>
+<p class="flow">起床直後（空腹時）→ <span class="keyword">水120mL以下</span>で服用 → 服用後30分は飲食・他の薬の服用を控える</p>
+<ul class="bullets" style="margin-top:4px;">
+  <li><span class="keyword">開始用量：3mg</span>（4週間）→ 7mg（4週間）→ 必要に応じて14mg へ段階的に増量します</li>
+  <li>水以外（コーヒー・お茶・ジュース等）では服用しないでください。薬の吸収が大幅に低下します</li>
+  <li>錠剤は割ったり砕いたりせず、必ず丸ごと飲み込んでください</li>
+  <li>服用後30分は飲食・他の薬・サプリメントも控えてください</li>
+  <li>毎日できるだけ同じ時間帯に服用することで安定した効果が得られます</li>
+</ul>
+</div>
+
+<div class="sec"><p class="sec-title">《副作用について》</p><ul class="bullets"><li><span class="keyword">消化器症状</span>（悪心・下痢・便秘・腹部不快感）が最もよく報告されています。特に服用開始初期や増量時に出やすく、数週間で軽快する場合がほとんどです</li><li>頭痛・めまいが起こる場合があります</li><li>食欲低下が強くなり過ぎて栄養不足になることがあります。食べられないときはご相談ください</li><li>まれに膵炎・胆嚢炎の報告があります。腹部の激しい痛みが続く場合はすぐにご連絡ください</li></ul></div>
+
+<div class="sec"><p class="sec-title">《注意事項》</p><ul class="bullets"><li>服用後30分の飲食禁止ルールは効果に直結します。必ず守ってください</li><li>水の量は120mL（コップ半分程度）以下にしてください。多すぎると吸収率が下がります</li><li>他の薬は服用後30分以上経ってから飲んでください</li><li>体重減少の効果には個人差があります。食事・運動と組み合わせることでより高い効果が期待できます</li><li>自己判断で用量を変更しないでください</li></ul></div>
+
+<div class="sec"><p class="sec-title">《処方できない方》</p><ul class="bullets"><li>甲状腺髄様癌の既往歴または家族歴がある方</li><li>多発性内分泌腫瘍症2型（MEN2）の方</li><li>妊娠中・妊娠を計画中・授乳中の方</li><li>セマグルチドまたは製剤成分にアレルギーがある方</li><li>重度の胃腸障害（炎症性腸疾患・胃不全麻痺・消化管閉塞など）のある方</li><li>膵炎の既往歴がある方</li></ul></div>
+
+<div class="sec"><p class="sec-title">《よくあるご質問》</p>
+<p class="faq-q">Q. 注射薬（オゼンピック・マンジャロ）と経口薬のどちらが効きますか？</p>
+<p class="faq-a">A. 臨床試験では注射薬のほうが体重減少効果は大きい傾向がありますが、リベルサスは飲み薬であるため継続しやすい利点があります。注射が苦手な方、日常生活に注射を取り入れにくい方にはリベルサスが向いています。担当医師と相談のうえ、ご自身のライフスタイルに合ったものを選びましょう。</p>
+<p class="faq-q">Q. 飲み忘れた場合はどうすればよいですか？</p>
+<p class="faq-a">A. 当日中に気づいた場合でも、次の食事まで6時間以上あれば服用できます。6時間以内の場合や翌日以降に気づいた場合は、その日の分はスキップして次の朝から再開してください。2回分をまとめて飲まないようにしてください。</p>
+<p class="faq-q">Q. お酒は飲めますか？</p>
+<p class="faq-a">A. 少量であれば大きな問題はありませんが、アルコールは食欲を増進させ、薬の効果を妨げる可能性があります。また、消化器症状が出やすい時期は特に控えることをおすすめします。飲む場合は食事の際にとどめ、空腹時の飲酒はお控えください。</p>
+</div>
+</div>
+</body>
+</html>
